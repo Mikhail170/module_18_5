@@ -1,0 +1,10 @@
+{% extends 'fourth_task/menu.html' %}
+{% block pagename %}<h1>Коньки</h1>{% endblock %}
+{% block menu %}{{ block.super }}{% endblock %}
+{% block content %}
+    <ul>
+        {% for scate in scates %}
+            <li>{{ scate }} <button>Купить</button></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
